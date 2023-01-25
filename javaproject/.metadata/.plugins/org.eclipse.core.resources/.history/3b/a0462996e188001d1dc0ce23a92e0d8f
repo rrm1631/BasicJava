@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+/**
+ * @author User
+ *
+ */
+module BookManagerCRUD {
+	requires java.desktop;
+	requires rs2xml;
+	requires java.sql;
+	
+}

@@ -1,0 +1,16 @@
+package noobTutorial;
+
+import javax.swing.JFrame;
+
+public class gui {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame app = new JFrame();
+		
+		app.setTitle("My First GUI");
+		
+
+	}
+
+}

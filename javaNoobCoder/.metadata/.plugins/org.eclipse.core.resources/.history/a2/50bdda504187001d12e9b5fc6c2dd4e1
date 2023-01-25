@@ -1,0 +1,23 @@
+package noobTutorial;
+
+import java.awt.*;
+import java.awt.Container;
+import javax.swing.JFrame;
+
+public class gui {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame app = new JFrame();
+		
+		app.setTitle("My First GUI");
+		app.setResizable(false);
+		app.setSize(500,500);
+		app.setVisible(true);
+		app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container c = app.getContentPane();
+		c.setBackground(red);
+	}
+
+}

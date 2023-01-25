@@ -1,0 +1,11 @@
+package abstractionUsingAbstract;
+
+public abstract class Animal {
+
+//	public void makeSound() {
+//		System.out.println("Animal Sounds...");
+//	}
+	
+	//abstract method
+	public abstract void makeSound(); //no body
+}

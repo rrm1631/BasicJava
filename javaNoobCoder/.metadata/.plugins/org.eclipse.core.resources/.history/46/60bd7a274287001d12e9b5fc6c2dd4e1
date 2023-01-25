@@ -1,0 +1,37 @@
+package noobTutorial;
+
+import java.awt.*;
+import java.awt.Container;
+import javax.swing.*;
+import javax.swing.JFrame;
+
+public class gui {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame app = new JFrame();
+		
+		app.setTitle("My First GUI");
+		app.setResizable(false);
+		app.setSize(500,500);
+		app.setVisible(true);
+		app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container c = app.getContentPane();
+//		c.setBackground(new Color(0,0,0));
+		
+		JButton east = new JButton("east");
+		JButton west = new JButton("west");
+		JButton center = new JButton("center");
+		JButton south = new JButton("south");
+		JButton north = new JButton("north");
+		
+		c.add(east, BorderLayout.EAST);
+		c.add(west, BorderLayout.EAST);
+		c.add(center, BorderLayout.EAST);
+		c.add(south, BorderLayout.EAST);
+		c.add(north, BorderLayout.EAST);
+		
+	}
+
+}

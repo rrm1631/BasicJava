@@ -1,0 +1,33 @@
+package jdbc;
+
+import java.sql.*;
+
+public class main {
+
+	public static void main(String[] args) throws SQLException{
+		
+		//Establishing a connection
+		String url = "jdbc:mysql://localhost/university";
+		String user = "root";
+		String pass = "";
+		
+		//Checks if connection is ready and working
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		}
+		catch(ClassNotFoundException e1) {
+			e1.printStackTrace();
+		}
+		
+		//Creates a connection to the database
+		Connection con = DriverManager.getConnection(url,user,pass);
+		Statement statement = con.createStatement();
+		
+		String query = "SELECT * FROM students";
+		
+		ResultSet result = statement.executeQuery(query);
+		
+		
+	}
+
+}

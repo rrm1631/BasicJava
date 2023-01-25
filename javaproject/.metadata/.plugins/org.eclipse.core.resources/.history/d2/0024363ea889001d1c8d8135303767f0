@@ -1,0 +1,5 @@
+package toImport;
+
+public class Constants {
+	float pi = 3.14f;
+}

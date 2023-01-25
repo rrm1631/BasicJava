@@ -1,0 +1,13 @@
+package ImportPackages;
+
+import toImport.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		Arithmetic a = new Arithmetic();
+		int sum = a.add(2, 4);
+		console.log(sum);
+	}
+
+}
